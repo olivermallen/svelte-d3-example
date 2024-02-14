@@ -1,6 +1,8 @@
 <script>
 	import './style.css';
 	import PlayerList from "./PlayerList.svelte";
+	import Scatterplot from "./scatterplot.svelte";
+	
 
 	// data comes from the load function in +page.js
 	export let data;
@@ -14,6 +16,7 @@
 <div class="container">
 	<div class="main">
 		<PlayerList dataset = {data.dataset} />
+		<Scatterplot dataset = {data.datset} {xFeature} {yFeature} />
 	</div>
 </div>
 
@@ -22,5 +25,7 @@
 		/* set the font */
 		font-family: system-ui, sans-serif;
 		font-size: 16px;
+
+		padding: 2em;
 	}
 </style>

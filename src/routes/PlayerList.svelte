@@ -13,7 +13,12 @@
 </ul>
 
 <style>
+    ul {
+        list-style: none;
+        padding: 0;
+    }
     li+li {
         margin-top: 0.5em
+
     }
 </style>
